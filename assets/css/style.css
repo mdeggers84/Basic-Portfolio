@@ -79,6 +79,13 @@ h1, h2, h3 {
 	clear: both;
 }
 
+.ribbon {
+	color: #fff;
+	background-color: #4aaaa5;
+	padding: 10px;
+	width: 100%;
+}
+
 #portfolioPic {
 	border-radius: 10px;
 	margin: 0px 15px 15px 0px;
