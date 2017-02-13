@@ -1,4 +1,6 @@
-
+* {
+	box-sizing: border-box;
+}
 
 html {
 	height: 100%;
@@ -20,15 +22,47 @@ body {
 
 header {
 	background-color: #ffffff;
-	padding: 26px;
+	max-height: 90px;
+	padding: 45px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.name {
+	position: absolute;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 29px 25px;
+	font-size: 2em;
+	top: 0;
+	left: 50px;
+}
+
+nav {
+	position: absolute;
+	display: inline;
+	left: 750px;
+}
+
+.buttons {
+	padding: 5px 10px;
+}
+
+.buttons:hover {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.buttons:active {
+	box-shadow: 2px 2px 10px #666;
+	transform: translateY(4px);
 }
 
 section {
 	background-color: #ffffff;
 	float: left;
 	width: 650px;
-	margin: 50px 10px 15px 60px;
+	margin: 50px 20px 15px 50px;
 	padding: 10px 30px 30px;
 }
 
@@ -36,7 +70,7 @@ aside {
 	background-color: #ffffff;
 	float: left;
 	width: 270px;
-	margin: 50px 10px;
+	margin: 50px 20px;
 	text-align: center;
 	padding: 15px;
 }
@@ -75,57 +109,42 @@ h2 {
 	left: 0;
 }
 
-h2 span {
+.banner {
 	color: white;
 	font: bold 24px Helvetica, Sans-Serif;
 	letter-spacing: -1px;
 	background: #4aaaa5;
-	padding: 5px 110px;
 
 }
 
-nav {
-	display: inline;
-	margin-right: 150px;
-	float: right;
+.banner-1 {
+	padding: 5px 60.3px;
+}
+
+.banner-2 {
+	padding: 5px 50.61px;
+}
+
+.banner-3 {
+	padding: 5px 39px;
+}
+
+.banner-4 {
+	padding: 5px 39px;
+}
+
+.banner-5 {
+	padding: 5px 39px;
 }
 
 .container {
 	flex: 1;
 }
 
-.input {
-	width: 100%;
-	height: 25px;
-}
-
 .icon {
 	height: 55px;
 	width: 55px;
-	padding: 5px 5px 30px;
-}
-
-.name {
-	background-color: #4aaaa5;
-	color: #ffffff;
-	padding: 30px 25px;
-	margin-left: 30px;
-	font-size: 2em;
-}
-
-.buttons {
-	padding: 5px 10px;
-}
-
-.buttons:hover {
-	background-color: #4aaaa5;
-	color: #ffffff;
-	box-shadow: 5px 5px 10px #888888;
-}
-
-.buttons:active {
-	box-shadow: 2px 2px 10px #666;
-	transform: translateY(4px);
+	margin: 5px 5px 30px;
 }
 
 .clear {
@@ -155,7 +174,8 @@ nav {
 }
 
 .footer {
-	height: 30px;
+	font-size: .65em;
+	border-top: solid thick #4aaaa5;
 }
 
 #portfolioPic {
@@ -163,6 +183,24 @@ nav {
 	margin: 0px 15px 15px 0px;
 }
 
+.input {
+	color: #777;
+	width: 100%;
+	height: 30px;
+	padding: 10px;
+}
+
 #message {
-	height: 100px;
+	height: 200px;
+	border-color: #ddd;
+}
+
+input.buttons {
+	background: #4aaaa5;
+	color: #fff;
+	height: 35px;
+	width: 100px;
+	border-style: none;
+	font-size: 1em;
+	/*padding: 10px;*/
 }
