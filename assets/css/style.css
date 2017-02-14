@@ -1,3 +1,5 @@
+/* General Page Attributes */
+
 * {
 	box-sizing: border-box;
 }
@@ -11,7 +13,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: #4aaaa5;
-	background-image: url("../images/cork-wallet.png");
+	background-image: url("../images/concrete_seamless.png");
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	widows: 960px;
@@ -20,11 +22,35 @@ body {
 	line-height: 200%;
 }
 
+hr {
+	color: #ddd;
+	background-color: #ddd;
+	border: none;
+	height: 3px;
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none !important;
+	color: #999;
+}
+
+p {
+
+}
+
+h1, h2, h3 {
+	color: #4aaaa5;
+}
+
+/* Header / Navigation */
+
 header {
 	background-color: #ffffff;
 	max-height: 90px;
 	padding: 45px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: solid #cccccc;
 }
 
 .name {
@@ -33,13 +59,15 @@ header {
 	color: #ffffff;
 	padding: 29px 25px;
 	font-size: 2em;
+	font-weight: bold;
 	top: 0;
 	left: 50px;
 }
 
 nav {
 	position: absolute;
-	display: inline;
+	display: inline;	
+	font-size: 18px;
 	padding: 10px;
 	left: 750px;
 	top: 15px;
@@ -60,12 +88,23 @@ nav {
 	transform: translateY(4px);
 }
 
+section, aside {
+	border: 2px solid #dddddd;
+}
+
 section {
 	background-color: #ffffff;
 	float: left;
 	width: 650px;
 	margin: 40px 20px 15px 50px;
 	padding: 10px 30px 30px;
+}
+
+/* Portfolio Section */
+
+#portfolioPic {
+	border-radius: 10px;
+	margin: 0px 15px 15px 0px;
 }
 
 .image {
@@ -112,6 +151,8 @@ section {
 	transform: translateY(4px);
 }
 
+/* Social Network Styling */
+
 aside {
 	background-color: #ffffff;
 	float: left;
@@ -138,40 +179,6 @@ aside {
 	margin: 5px 0px 25px;
 }
 
-footer {
-	text-align: center;
-	padding: 20px;
-	background-color: #666666;
-	color: #ffffff;
-	font-size: .75em;
-	border-top: solid thick #4aaaa5;
-}
-
-hr {
-	color: #ddd;
-	background-color: #ddd;
-	border: none;
-	height: 3px;
-	margin-bottom: 20px;
-}
-
-a {
-	text-decoration: none !important;
-	color: #777777;
-}
-
-p {
-
-}
-
-h1, h2, h3 {
-	color: #4aaaa5;
-}
-
-.container {
-	flex: 1;
-}
-
 .clear {
 	clear: both;
 }
@@ -184,16 +191,18 @@ h1, h2, h3 {
   transform: rotate(10deg);
 }
 
-#portfolioPic {
-	border-radius: 10px;
-	margin: 0px 15px 15px 0px;
+/* Contact Form Styling */
+
+label {
+	font-size: 18px;
 }
 
 .input {
-	color: #777;
+	font-size: 14px;
+	color: #ccc;
 	width: 100%;
 	height: 30px;
-	padding: 10px;
+	padding: 15px;
 }
 
 #message {
@@ -210,8 +219,23 @@ input.buttons {
 	font-size: 1em;
 }
 
+/* Sticky Footer Styling */
+
+.container {
+	flex: 1;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #666666;
+	color: #ffffff;
+	font-size: .75em;
+	border-top: solid thick #4aaaa5;
+}
+
 #sloth {
-	display: block;
+	display: none;
 	position: absolute;
 	bottom: -15px;
 	right: -320px;
