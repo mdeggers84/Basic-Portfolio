@@ -72,14 +72,33 @@ aside {
 	width: 270px;
 	margin: 40px 20px;
 	text-align: center;
-	padding: 15px;
+}
+
+#connect {
+	margin: 10px 30px 0px;
+}
+
+#connect h3 {
+	margin: 0;
+}
+
+#connect hr {
+	height: 2px;
+}
+
+.icon {
+	height: 60px;
+	width: 60px;
+	margin: 5px 0px 25px;
 }
 
 footer {
 	text-align: center;
-	padding: 30px;
+	padding: 20px;
 	background-color: #666666;
 	color: #ffffff;
+	font-size: .75em;
+	border-top: solid thick #4aaaa5;
 }
 
 hr {
@@ -103,10 +122,13 @@ h1, h2, h3 {
 	color: #4aaaa5;
 }
 
-section h2 {
-	position: absolute;
-	bottom: 15px;
-	left: 0;
+/*.hover-outline:hover {
+  outline: 5px solid #4aaaa5;
+  outline-offset: 0px;
+}*/
+
+.thumbnail {
+	margin: 0px 20px 10px 0px;
 }
 
 .banner {
@@ -114,37 +136,29 @@ section h2 {
 	font: bold 24px Helvetica, Sans-Serif;
 	letter-spacing: -1px;
 	background: #4aaaa5;
+	padding: 10px 5px;
 
+	position: absolute;
+	bottom: 35px;
+	left: 0;
+	width: 91.7%;
+	font-size: 1.25em;
+	text-align: center;
 }
 
-.banner-1 {
-	padding: 5px 60.3px;
+.banner:hover {
+	box-shadow: 5px 5px 10px #888888;
+	outline: 5px solid #4aaaa5;
+ 	outline-offset: 0px;
 }
 
-.banner-2 {
-	padding: 5px 50.61px;
-}
-
-.banner-3 {
-	padding: 5px 39px;
-}
-
-.banner-4 {
-	padding: 5px 39px;
-}
-
-.banner-5 {
-	padding: 5px 39px;
+.banner:active {
+	box-shadow: 2px 2px 10px #666;
+	transform: translateY(4px);
 }
 
 .container {
 	flex: 1;
-}
-
-.icon {
-	height: 60px;
-	width: 60px;
-	margin: 5px 5px 30px;
 }
 
 .clear {
@@ -162,20 +176,6 @@ section h2 {
   -moz-transform: rotate(10deg);
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
-}
-
-.hover-outline:hover {
-  outline: 5px solid #4aaaa5;
-  outline-offset: 0px;
-}
-
-.thumbnail {
-	margin: 0px 20px 10px 0px;
-}
-
-.footer {
-	font-size: .65em;
-	border-top: solid thick #4aaaa5;
 }
 
 #portfolioPic {
@@ -202,5 +202,15 @@ input.buttons {
 	width: 100px;
 	border-style: none;
 	font-size: 1em;
-	/*padding: 10px;*/
+}
+
+#sloth {
+	display: none;
+	position: absolute;
+	bottom: -20px;
+	right: -620px;
+}
+
+#slothbtn:hover>#sloth {
+	display: block;
 }
