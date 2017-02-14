@@ -62,7 +62,7 @@ section {
 	background-color: #ffffff;
 	float: left;
 	width: 650px;
-	margin: 50px 20px 15px 50px;
+	margin: 40px 20px 15px 50px;
 	padding: 10px 30px 30px;
 }
 
@@ -70,7 +70,7 @@ aside {
 	background-color: #ffffff;
 	float: left;
 	width: 270px;
-	margin: 50px 20px;
+	margin: 40px 20px;
 	text-align: center;
 	padding: 15px;
 }
@@ -103,7 +103,7 @@ h1, h2, h3 {
 	color: #4aaaa5;
 }
 
-h2 {
+section h2 {
 	position: absolute;
 	bottom: 15px;
 	left: 0;
@@ -142,8 +142,8 @@ h2 {
 }
 
 .icon {
-	height: 55px;
-	width: 55px;
+	height: 60px;
+	width: 60px;
 	margin: 5px 5px 30px;
 }
 
